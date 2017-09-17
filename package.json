@@ -1,0 +1,26 @@
+{
+  "name": "mean-app",
+  "version": "1.0.0",
+  "description": "My first MEAN stack RESTful application ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mean",
+    "angularjs",
+    "nodejs",
+    "mongodb",
+    "express",
+    "restful",
+    "development",
+    "web"
+  ],
+  "author": "Danielle Almeida",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.11"
+  }
+}

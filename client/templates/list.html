@@ -1,0 +1,31 @@
+<div class="panel panel-default" ng-init="getCompanies()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" 
+class="glyphicon glyphicon-list"> </span> Companies List</p>
+	</div>
+	<div class="panel-body">
+		<div>Search by Nome Fantasia: <input type="text" ng-model="search.nome_fantasia"></div><br>
+		<table class="table table-striped">
+			<thead>
+			<tr>
+			  <th>CNPJ</th>
+			  <th>Razão Social</th>
+			  <th>Nome Fantasia</th>
+			  <th>Actions</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="company in companies | filter: search">
+			  <td>{{ company.cnpj }}</td>
+			  <td>{{ company.razao_social }}</td>
+			  <td>{{ company.nome_fantasia }}</td>
+			  <td> 
+			    <a href="#/companies/{{company._id}}/show" class="btn btn-info"> Show  </a>
+			    <a href="#/companies/{{company._id}}/edit" class="btn btn-success"><span class="glyphicon glyphicon-edit"> </span> Edit  </a>
+			  	<a ng-click="deleteCompany(company._id)" class="btn btn-danger"><span class="glyphicon glyphicon-trash" onclick="confirma();"> </span> Delete </a>
+			  </td>
+			</tr>
+			</tbody>
+		</table>		
+    <div>
+<div>

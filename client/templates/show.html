@@ -1,0 +1,19 @@
+<div class="panel panel-default" ng-init="showCompany()">
+	<div class="panel-heading">
+	  <p class="panel-title"> Company Detail Information</p>
+	</div>
+	<div class="panel-body">
+		<form>
+		<div class="form-group">
+		 <label class="form-control">CNPJ: {{ company.cnpj }}</label>
+		 <label class="form-control">Razão Social: {{ company.razao_social }}</label>
+		 <label class="form-control">Nome Fantasia: {{ company.nome_fantasia }}</label>
+		 <label class="form-control">CPF do Responsável: {{ company.cpf_responsavel }}</label>
+		 <label class="form-control">Nome do Responsável: {{ company.nome_responsavel }}</label>
+		 <label class="form-control">Data da Fundação: {{ company.data_fundacao }}</label>
+		 <label class="form-control">ID: {{ company._id }}</label>
+		<a href="#/companies" class="btn btn-default"> Cancel</a>
+		</div>
+	</form>		
+    <div>
+<div>

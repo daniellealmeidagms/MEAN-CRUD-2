@@ -1,0 +1,32 @@
+<div class="panel panel-default" ng-init="showCompany()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" 
+class="glyphicon glyphicon-edit"> </span> Edit Company</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="updateCompany()">
+    <div class="form-group">
+      <label for="razao_social">Razão Social:</label>
+      <input type="text" class="form-control" id="razao_social" ng-model="company.razao_social" value="company.razao_social">
+    </div>
+    <div class="form-group">
+      <label for="nome_fantasia">Nome Fantasia:</label>
+      <input type="text" class="form-control" id="nome_fantasia" ng-model="company.nome_fantasia" value="company.nome_fantasia">
+    </div>
+    <div class="form-group">
+      <label for="cpf_responsavel">CPF do Responsável:</label>
+      <input type="text" class="form-control" id="cpf_responsavel" ng-model="company.cpf_responsavel" value="company.cpf_responsavel">
+    </div>
+    <div class="form-group">
+      <label for="nome_responsavel">Nome do Responsável:</label>
+      <input type="text" class="form-control" id="nome_responsavel" ng-model="company.nome_responsavel" value="company.nome_responsavel">
+    </div>
+    <div class="form-group">
+      <label for="data_fundacao">Data da Fundação:</label>
+      <input type="date" class="form-control" id="data_fundacao" ng-model="company.data_fundacao" value="company.data_fundacao">
+    </div>
+    <button type="submit" style="color:#5bc0de;" class="btn btn-default">Update</button>
+    <a href="#/companies" class="btn btn-default"> Cancel</a>
+</form>		
+    <div>
+<div>
